@@ -61,6 +61,16 @@
     color:white;
 }
 
+#place-time{
+    background-color: #343a40;
+    color: white;
+}
+#place-time img{
+    max-width: 50%;
+    align-items: center;
+}
+
+
 #footer{
     background: linear-gradient(90deg,#4d94ff,#6666ff 25%, #944dff);
 }

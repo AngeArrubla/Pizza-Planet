@@ -12,34 +12,34 @@
     <title>Planet Pizza</title>
   </head>
 
-  <body>
+  <body data-bs-spy="scroll" data-target="#navbar" data-bs-offset="40">
     <!--Header-->
     <header>
-      <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
               <img src="assets/images/Cohete.png" alt="Pizza planeta logo">
               Pizza Planeta
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">¿Quienes somos?</a>
+                <a class="nav-link" aria-current="page" href="#main">¿Quienes somos?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Nuestro Menú</a>
+                <a class="nav-link" href="#aliados">Nuestros Aliados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Nuestra Ubicación</a>
+                <a class="nav-link" href="#place-time">Evento</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contáctanos</a>
+                <a class="nav-link" href="#conviertete--en__aliado">Contáctanos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-planet" href="#"> Evento Pizza Gratis</a>
+                <a class="nav-link text-planet" href="#"> Evento Pizza Gratis</a>
               </li>
             </ul>
           </div>
@@ -93,7 +93,7 @@
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card">
-              <img src="assets/pizzerias-aliadas/Pizzeria.jpg" class="card-img-top" alt="pizzeria hoboken">
+              <img src="assets/pizzerias-aliadas/Pizzeria.jpg" class="card-img-top" alt="pizzeria Vintage"/>
               <div class="card-body">
                 <h5 class="card-title">Pizzeria Vintage</h5>
                 <div id="badges" class="badges mb-2">
@@ -106,7 +106,7 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card">
-              <img src="assets/pizzerias-aliadas/Pizzeria1.jpg" class="card-img-top" alt="Le hors piste">
+              <img src="assets/pizzerias-aliadas/Pizzeria1.jpg" class="card-img-top" alt="Le hors piste"/>
               <div class="card-body">
                 <h5 class="card-title">Le Hors Piste</h5>
                 <div id="badges" class="badges mb-2">
@@ -119,7 +119,7 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card">
-              <img src="assets/pizzerias-aliadas/Pizzeria2.jpg" class="card-img-top" alt="Aniellos's Pizzeria">
+              <img src="assets/pizzerias-aliadas/Pizzeria2.jpg" class="card-img-top" alt="Aniellos's Pizzeria"/>
               <div class="card-body">
                 <h5 class="card-title">Aniellos's Pizzeria</h5>
                 <div id="badges" class="badges mb-2">
@@ -132,7 +132,7 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card">
-              <img src="assets/pizzerias-aliadas/Pizzeria3.jpg" class="card-img-top" alt="Pizzeria Venecia">
+              <img src="assets/pizzerias-aliadas/Pizzeria3.jpg" class="card-img-top" alt="Pizzeria Venecia"/>
               <div class="card-body">
                 <h5 class="card-title">Pizzeria Venecia</h5>
                 <div id="badges" class="badges mb-2">
@@ -147,8 +147,57 @@
        
       </div>
     </section>
-    
+    <!--Lugar y fecha-->
+    <section id="place-time">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 ps-0 pe-0">
+            <img src="assets/images/Cohete.png" class="img-fluid ounded mx-auto d-block" alt="Planet"/>
+          </div>
+          <div class="col-12 col-lg-6 pt-5 pb-5">
+            <h2 class="text-center"> ¡Evento Pizza Gratis! </h2>
+            <p class="text-center fw-bold">Dia 6 de noviembre de 2020</p>
+            <p class="fst-italic"> Acompaña a pizza planeta y a sus aliados a repartir nuestras ricas pizzas a distintos sitios de la ciudad, puedes unirte a los grupos que se van a reunir en la ubicacion de cada pizzeria y al finalizar la jornada ¡tambien piedes recibir una gratis!</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+     <!--conviertete en pizzeria aliada-->
+     <section id="conviertete--en__aliado" class="pt-2 pb-2">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="text-uppercase">Conviertete en un</small>
+            <h2>Aliado</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            Anótate como alidado para repertir pizzas en distintos sitios de la ciudad con un fin <abbr title="acciones sin fines de lucro" data-bs-toggle="tooltip">social</abbr>
+          </div>
+        </div>
+        <div class="row form-grid pt-3">
+          <div class="form-label col-12 col-md-5 offset-md-1">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+          </div>
+          <div class="form-label col-12 col-md-5 offset-md-1">
+            <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+          </div>
+        </div>
+        <div class="form-grid pt-3">
+          <div class="form-label d-grid gap-1 offset-md-1">
+            <textarea name="text" class="form-control form-control-lg" placeholder="¿Qué quieres compartir?"></textarea>
+          </div>
+        </div>
+        <div class="form-grid pt-3">
+          <div class="form-label d-grid gap-1 offset-md-1">
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+     </section>
+    
     <!--Footer-->
     <footer id="footer" class="pb-4 pt-4">
       <div class="container">
@@ -175,5 +224,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="index.js"> </script>
   </body>
 </html>
