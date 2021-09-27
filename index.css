@@ -1,6 +1,15 @@
-.text-platzi {
-    color:#66b3ff !important;
+.text-planet {
+    color: #4d94ff!important;
 }
+
+.btn-primary{
+    background-color:#4d94ff;
+    color: white;
+}
+.btn-primary:hover{
+    background-color: #1a75ff;
+}
+
 #header img {
     width: 50px;
 }
@@ -38,8 +47,22 @@
     width: 25px;
 }
 
+#aliados  .container .row img{
+    max-height: 27vh;
+    object-fit: cover;
+    }
+
+#badges .bg-ubicacion{
+    background-color:#4d94ff;
+    color: white;
+}
+#badges .bg-menu{
+    background-color:#944dff;
+    color:white;
+}
+
 #footer{
-    background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
+    background: linear-gradient(90deg,#4d94ff,#6666ff 25%, #944dff);
 }
 a{
     color: white;
