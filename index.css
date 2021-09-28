@@ -1,3 +1,6 @@
+body{
+    position: relative;
+}
 .text-planet {
     color: #4d94ff!important;
 }
