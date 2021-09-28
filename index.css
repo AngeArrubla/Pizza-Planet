@@ -63,6 +63,9 @@ body{
     background-color:#944dff;
     color:white;
 }
+#badges .bi-instagram{
+    color: #ffd20a;
+}
 
 #place-time{
     background-color: #343a40;
